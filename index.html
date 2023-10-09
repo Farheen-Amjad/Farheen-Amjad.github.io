@@ -21,61 +21,141 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        nav{
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        nav ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
         }
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
-        nav ul li a:hover{
+
+        nav ul li a:hover {
             color: rgb(153, 153, 226);
             font-size: 1.07rem;
         }
 
-        .left{
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
             font-size: 1.5rem;
         }
 
-        .firstSection{
+        .firstSection {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 80px 0;
-            
+            margin: 140px 0;
+
         }
 
-        .firstSection > div{
+        .firstSection>div {
             width: 30%;
         }
 
-        .leftSection{
+        .leftSection {
             font-size: 2rem;
-       }
+        }
 
-        .rightSection img{
-           width: 65%;
-       }
-       .purple{
-        color: rgb(170, 107, 228);
-       }
-       #element{
-        color: rgb(170, 107, 228);
-       }
+        .rightSection img {
+            width: 65%;
+        }
 
+        .purple {
+            color: rgb(170, 107, 228);
+        }
 
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 46vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 43px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 7.5px;
+        }
+
+        footer {
+            background-color: rgb(31, 31, 70);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 123px;
+        }
     </style>
 
 </head>
@@ -89,8 +169,8 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Services</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">ContactMe</a></li>
                 </ul>
@@ -99,31 +179,101 @@
 
     </header>
 
-   <main>
-    <section class="firstSection">
-        <div class="leftSection">
-            Hey, my name is <span class="purple">Farheen Amjad</span>
-            <div>
-                and I am a passionate Software Engineer!
-            </div>
-            
-            <div>I have hands-on:</div>
-            <span id="element"></span> 
-        </div>
-        <div class="rightSection">
-            <img src="mypic.png" alt="">
-        </div>
+    <main>
+        <section class="firstSection" id="about">
+            <div class="leftSection">
+                Hey, my name is <span class="purple">Farheen Amjad</span>
+                <div>
+                    and I am a passionate Software Engineer!
+                </div>
 
-    </section>
-   </main>
-   
-   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-   <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Development', 'API Development', 'Web Designing', '&amp;  Video Editing.'],
-      typeSpeed: 50,
-    });
-  </script>
+                <div>I have hands-on:</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="mypic.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="experience">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev1.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I am an accomplished HTML developer known for creating visually appealing and user-friendly
+                        websites.
+                        With expertise in HTML5, CSS3, and responsive design, I transforms ideas into engaging
+                        digital experiences.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dev1.png" alt="">
+                    <div class="vertical-title">
+                        API Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I am a proficient API developer specializing in creating robust and efficient application
+                        programming
+                        interfaces. With a deep understanding of various programming languages and a knack for designing
+                        seamless data communication between software systems, I am a go-to expert for
+                        building and optimizing APIs that power modern applications. I combines technical prowess and
+                        problem-solving skills to deliver high-performance, scalable solutions for today's
+                        interconnected digital world.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dev1.png" alt="">
+                    <div class="vertical-title">
+                        Video Editor (2020-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        I am a talented video editor with a creative flair for transforming raw footage into captivating
+                        visual stories. With expertise in video editing software, an eye for detail, and a passion for
+                        storytelling, I excels at crafting videos that engage, inform, and entertain. Whether
+                        it's editing corporate videos, documentaries, or promotional content, I combines
+                        technical skill and artistic vision to bring video projects to life.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Farheen's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>ContactMe</li>
+                </ul>
+            </div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Development', 'API Development', 'Web Designing', '&amp;  Video Editing.'],
+            typeSpeed: 50,
+        });
+    </script>
 
 </body>
 
